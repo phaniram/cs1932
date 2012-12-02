@@ -10,11 +10,6 @@
     <path id="classpath">
         <fileset dir="${lib.dir}" includes="**/*.jar"/>
     </path>
-
-	<java classname="${main-class}">
-	   <sysproperty key="log4j.configuration" value="file:src/log4j.xml"/>
-	   <classpath refid="classpath"/>
-	</java>
 	   	
     <path id="application" location="${jar.dir}/${ant.project.name}.jar"/>
     
